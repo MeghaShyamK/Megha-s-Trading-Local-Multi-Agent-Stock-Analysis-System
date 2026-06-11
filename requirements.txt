@@ -1,0 +1,33 @@
+# ============================================================
+# Megha's Trading - Multi-Agent System Requirements
+# ============================================================
+
+# --- Core UI ---
+streamlit>=1.35.0
+
+# --- Market Data ---
+yfinance>=0.2.40
+pandas>=2.2.0
+ta>=0.11.0                   # Technical Analysis library (EMA, RSI, MACD, Fibonacci) — Python 3.10 compatible
+numpy>=1.26.0
+
+# --- Options / Derivatives (NSE) ---
+nsepython>=2.9               # NSE option chain & OI data
+
+# --- Web Scraping ---
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=5.1.0                  # Fast HTML parser for BeautifulSoup
+
+# --- LangChain / LangGraph Orchestration ---
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-ollama>=0.1.0      # Ollama integration for local LLMs
+langgraph>=0.1.0
+
+# --- Visualization ---
+plotly>=5.22.0
+
+# --- Utilities ---
+python-dotenv>=1.0.0
+pydantic>=2.7.0
