@@ -8,3 +8,11 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Config — contains sensitive credentials (admin password, email, Discord webhook)
+# Copy config.example.toml → config.toml and fill in your values
+config.toml
+
+# SQLite database — contains user data, do not commit
+data/trading.db
+*.db

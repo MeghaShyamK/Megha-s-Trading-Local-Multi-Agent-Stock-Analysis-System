@@ -1,0 +1,46 @@
+# config.toml
+# ─────────────────────────────────────────────────────────────────────────────
+# Megha's Trading System — Configuration Template
+#
+# HOW TO USE:
+#   1. Copy this file:  cp config.example.toml config.toml
+#   2. Fill in your values below
+#   3. config.toml is git-ignored — your credentials will never be committed
+# ─────────────────────────────────────────────────────────────────────────────
+
+[admin]
+# Admin account created automatically on first startup
+username = "admin"
+password = "change_me_now"          # ← CHANGE THIS to a strong password
+display_name = "Admin"
+
+[app]
+app_name = "Megha's Trading"
+# Sharing mode: "lan" = local network only, "ngrok" = internet via ngrok
+share_mode = "lan"
+
+[email]
+# Gmail SMTP settings for alert email notifications.
+# To generate an App Password:
+#   1. Go to https://myaccount.google.com/security
+#   2. Enable 2-Step Verification
+#   3. App Passwords → Select "Mail" → Generate
+#   4. Paste the 16-character password below (no spaces)
+smtp_host = "smtp.gmail.com"
+smtp_port = 587
+sender_email = ""                   # e.g. yourname@gmail.com
+sender_app_password = ""            # 16-character App Password (NOT your Gmail password)
+sender_name = "Megha's Trading Alerts"
+
+[discord]
+# Optional: Discord webhook for alert notifications
+# Create one: Discord Server → Channel Settings → Integrations → Webhooks → New Webhook
+default_webhook_url = ""
+
+[trading_hours]
+# NSE market hours (IST) — used by the background alert engine
+market_open_hour = 9
+market_open_minute = 15
+market_close_hour = 15
+market_close_minute = 30
+timezone = "Asia/Kolkata"

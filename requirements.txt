@@ -31,3 +31,9 @@ plotly>=5.22.0
 # --- Utilities ---
 python-dotenv>=1.0.0
 pydantic>=2.7.0
+
+# --- v2: Auth + Scheduling + Timezone ---
+bcrypt>=4.1.0                  # Password hashing for user auth
+APScheduler>=3.10.0            # Background alert scheduler
+pytz>=2024.1                   # Timezone support for trading hours check
+
